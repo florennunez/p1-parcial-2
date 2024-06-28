@@ -1,4 +1,11 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 header, footer {
     background-color: #f8f8f8;
     padding: 10px;
