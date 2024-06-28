@@ -1,7 +1,70 @@
 
 [
-    {"nombre": "Taza Personalizada", "descripcion": "Taza de cerámica con sublimación personalizada", "precio": 500, "imagen": "img/taza.jpg", "categoria": "Plastico"},
-    {"nombre": "Remera Sublimada", "descripcion": "Remera de algodón con diseño personalizado", "precio": 800, "imagen": "img/remera.jpg", "categoria": "Textil"},
-    {"nombre": "Llaveros", "descripcion": "Llaveros de madera personalizados", "precio": 200, "imagen": "img/llavero.jpg", "categoria": "Madera"}
-    
+    {
+        "nombre": "Taza Personalizada", 
+        "descripcion": "Taza de cerámica con sublimación personalizada", 
+        "precio": 500, "imagen": "img/taza.jpg", 
+        "categoria": "Plastico"
+    },
+    {
+        "nombre": "Soy una Taza Morty", 
+        "descripcion": "Taza de cerámica con sublimación personalizada", 
+        "precio": 500, "imagen": "img/taza.jpg", 
+        "categoria": "Plastico"
+    },
+    {
+        "nombre": "Taza de Café", 
+        "descripcion": "Taza de cerámica con sublimación personalizada", 
+        "precio": 500, "imagen": "img/taza.jpg", 
+        "categoria": "Plastico"
+    },
+    {
+        "nombre": "Charly García", 
+        "descripcion": "Ranglan gris mangas negras diseño personalizado", 
+        "precio": 800, "imagen": "img/remera.jpg", 
+        "categoria": "Textil"
+    },
+    {
+        "nombre": "Indio Solari", 
+        "descripcion": "Ranglan gris mangas negras diseño personalizado", 
+        "precio": 800, "imagen": "img/remera.jpg", 
+        "categoria": "Textil"
+    },
+    {
+        "nombre": "Gatitos", 
+        "descripcion": "Ranglan gris mangas negras diseño personalizado", 
+        "precio": 800, "imagen": "img/remera.jpg", 
+        "categoria": "Textil"
+    },
+    {
+        "nombre": "Rick y Morty", 
+        "descripcion": "Ranglan gris mangas negras diseño personalizado", 
+        "precio": 800, "imagen": "img/remera.jpg", 
+        "categoria": "Textil"
+    },
+    {
+        "nombre": "Pulp Fiction", 
+        "descripcion": "Ranglan gris mangas negras diseño personalizado", 
+        "precio": 800, "imagen": "img/remera.jpg", 
+        "categoria": "Textil"
+    },
+    {
+        "nombre": "Soy un pepinillo Morty", 
+        "descripcion": "Ranglan gris mangas negras diseño personalizado", 
+        "precio": 800, "imagen": "img/remera.jpg", 
+        "categoria": "Textil"
+    },
+    {
+        "nombre": "Bandeja", 
+        "descripcion": "Bandejas de 20x20 cm personalizadas", 
+        "precio": 200, "imagen": "img/llavero.jpg", 
+        "categoria": "Madera"
+    },
+    { 
+        "nombre": "Llaveros", 
+        "descripcion": "Llaveros de madera personalizados", 
+        "precio": 200, "imagen": "img/llavero.jpg", 
+        "categoria": "Madera"
+    }
+ 
 ]
