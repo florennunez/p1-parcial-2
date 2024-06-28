@@ -1,10 +1,10 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll("a").forEach(function (element) {
+    document.querySelectorAll("a").forEach(element => {
         element.addEventListener("click", function () {
             console.log(element);
         });
-    }
+    });
 });
 
 let catalogo = new Catalogo();
