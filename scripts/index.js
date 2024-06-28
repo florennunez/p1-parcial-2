@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll("a").forEach(element => {
         element.addEventListener("click", function () {
             const categoria = element.innerText; // O cualquier otra lógica para obtener la categoría del elemento
-            catalogo.filtrarProductos(categoria);
+            catalogo.filtrarProductos(categoria.innerText);
         });
     });
 });
