@@ -2,7 +2,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll("a").forEach(element => {
         element.addEventListener("click", function () {
-            console.log(element.innerText);
+            const categoria = element.innerText; // O cualquier otra lógica para obtener la categoría del elemento
+            catalogo.filtrarPorCategoria(categoria);
         });
     });
 });
@@ -14,6 +15,7 @@ fetch('productos.json')
     .then(response => response.json())
     .then(data => {
         catalogo.cargarProductos(data);
+        // Aquí podrías llamar a mostrarProductos sin filtro para cargar todos inicialmente
         catalogo.mostrarProductos('');
     });
 
