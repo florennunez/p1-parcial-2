@@ -21,9 +21,10 @@ function filtrarProductos(categoria) {
     catalogo.mostrarProductos(categoria);
 }
 
-function agregarAlCarrito(nombreProducto) {
+/* function agregarAlCarrito(nombreProducto) {
     const producto = catalogo.productos.find(p => p.nombre === nombreProducto);
     if (producto) {
         carrito.agregarProducto(producto);
-    }
-}
+    } }*/
+
+
