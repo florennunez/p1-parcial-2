@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll("a").forEach(element => {
         element.addEventListener("click", function () {
-            console.log(element);
+            console.log(element.innerText);
         });
     });
 });
