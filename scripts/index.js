@@ -1,10 +1,11 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll("a").forEach(element => {
-        element.addEventListener("click", function () {
-            const categoria = element.innerText; // O cualquier otra lógica para obtener la categoría del elemento
+    document.body.addEventListener("click", function (event) {
+        if (event.target.tagName === 'A') {
+            const categoria = event.target.innerText;
             catalogo.filtrarProductos(categoria);
-        });
+            event.preventDefault(); // Evita la acción por defecto de los enlaces.
+        }
     });
 });
 
