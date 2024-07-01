@@ -1,15 +1,15 @@
 
 [
     {
-        "nombre": "No coffe No force", 
+        "nombre": "Node js", 
         "descripcion": "Taza de cerámica con sublimación personalizada", 
-        "precio": 500, "imagen": "img/taza.jpg", 
+        "precio": 500, "imagen": "img/taza_node.jpg", 
         "categoria": "Plastico"
     },
     {
-        "nombre": "Soy una Taza Morty", 
+        "nombre": "React", 
         "descripcion": "Taza de cerámica con sublimación personalizada", 
-        "precio": 500, "imagen": "img/taza.react.jpg", 
+        "precio": 500, "imagen": "img/taza_react.jpg", 
         "categoria": "Plastico"
     },
     {
