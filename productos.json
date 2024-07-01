@@ -3,7 +3,7 @@
     {
         "nombre": "Node js", 
         "descripcion": "Taza de cerámica con sublimación personalizada", 
-        "precio": 500, "imagen": "img/taza_node.jpg", 
+        "precio": 500, "imagen": "img/taza_react.jpg", 
         "categoria": "Plastico"
     },
     {
@@ -15,7 +15,7 @@
     {
         "nombre": "Taza de Café", 
         "descripcion": "Taza de cerámica con sublimación personalizada", 
-        "precio": 500, "imagen": "img/taza.jpg", 
+        "precio": 500, "imagen": "img/taza_react.jpg", 
         "categoria": "Plastico"
     },
     {
