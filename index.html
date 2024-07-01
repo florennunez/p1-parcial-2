@@ -16,69 +16,77 @@
         
     </head>
     <body>
-        <header>
-            <h1>Cafe Pictorico</h1>
-        </header>
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
-              <img src="images/logo_cafe_grande.png" alt="logo_cafe_grande">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarColor02">
+            <img src="images/logo_cafe_grande.png" alt="logo_cafe_grande">
+            <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav me-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Home
-                      <span class="visually-hidden">(current)</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Plastico</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Textil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Madera</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Especiales</a>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                    <a class="dropdown-item" href="#">Semana de la dulzura</a>
+                    <a class="dropdown-item" href="#">Dia del amigo</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Otros</a>
                     </div>
-                  </li>
+                </li>
                 </ul>
                 <form class="d-flex">
-                  <input class="form-control me-sm-2" type="search" placeholder="Search">
-                  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control me-sm-2" type="search" placeholder="producto">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
                 </form>
+            </div>
+            </div>
+        </nav>
+        <header>
+            <h1 class="text-center">Café Pictórico</h1>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <img src="images/iconos/verificar.png" alt="Descripción" style="height: 20px; width: auto;">
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrito</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div id="carrito">
+                        <p><span>0</span> ítems agregados</p>
+                        <p>$<span>0</span> es el total</p>
+                        <button>Ver carrito</button>
+                    </div>
+                  <!-- <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div> -->
+                </div>
               </div>
-            </div>
-          </nav>
-
-          <div class="container">
-<p>Productos <a href="#">PERSONALIZADOS</a></p>
-<p><small>comunicate con nosotros</small></p>
+        </header>
+        <div class="container-fluid">
+        <p>Regalos UNICOS para personas extraordinarias: todos los productos personalizados</p>
         <main>
-            <div id="carrito">
-                <p><span>0</span> ítems agregados</p>
-                <p>$<span>0</span> es el total</p>
-                <p>Filtrar por <a>Plastico</a> | <a>Textil</a> | <a>Madera</a></p>
-                <button>Ver carrito</button>
-            </div>
             <h2>Productos</h2>
             <div id="productos">
                 <!-- Aca irian los productos -->
             </div>
         </main>
     </div>
-
         <footer>
-            
-        
+            <p><small>comunicate con nosotros</small></p>
+        </footer>
     </body>
 </html>
