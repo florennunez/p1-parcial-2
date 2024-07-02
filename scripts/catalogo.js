@@ -27,7 +27,7 @@ class Catalogo {
         const productoDiv = document.createElement('div');
         productoDiv.classList.add('producto');
 
-        // Crear y configurar elementos para nombre, descripción y precio
+        // Crear y configurar elementos para imagen, nombre, descripción y precio
         const imagenEl = document.createElement('img');
         imagenEl.textContent = producto.imagen;
         const nombreEl = document.createElement('h2');
@@ -38,6 +38,7 @@ class Catalogo {
         precioEl.textContent = `Precio: $${producto.precio}`;
 
         // Agregar elementos al div del producto
+        productoDiv.appendChild(imagenEl);
         productoDiv.appendChild(nombreEl);
         productoDiv.appendChild(descripcionEl);
         productoDiv.appendChild(precioEl);
