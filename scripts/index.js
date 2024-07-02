@@ -1,9 +1,10 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll("a").forEach(element => {
+    document.querySelectorAll(".nav-link").forEach(element => {
         element.addEventListener("click", function () {
-            const categoria = element.innerText; // O cualquier otra lógica para obtener la categoría del elemento
-            catalogo.filtrarProductos(categoria.innerText);
+            event.preventDefault(); // Evitar el comportamiento predeterminado de los enlaces
+            const categoria = element.innerText.trim(); // Obtener la categoría del texto del enlace
+            filtrarProductos(categoria); // Llamar a la función de filtrado
         });
     });
 });
