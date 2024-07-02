@@ -8,7 +8,9 @@ class Producto {
     }
 
     toHTML() {
-        return `
+        let productoDiv = document.createElement('div');
+        productoDiv.classList.add('producto');
+        productoDiv.innerHTML = `
             <div class="producto">
                 <img src="${this.imagen}" alt="${this.nombre}">
                 <h3>${this.nombre}</h3>
