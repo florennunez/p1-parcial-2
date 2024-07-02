@@ -27,13 +27,7 @@ class Catalogo {
         const productoDiv = document.createElement('div');
         productoDiv.classList.add('producto');
 
-        // Usar el método toHTML() para obtener el HTML del producto
-        productoDiv.innerHTML = producto.toHTML();
-
-        // Agregar el div del producto al contenedor del catálogo
-        catalogoDiv.appendChild(productoDiv);
-
-        /* // Crear y configurar elementos para nombre, descripción y precio
+        // Crear y configurar elementos para nombre, descripción y precio
         const nombreEl = document.createElement('h2');
         nombreEl.textContent = producto.nombre;
         const descripcionEl = document.createElement('p');
@@ -47,7 +41,7 @@ class Catalogo {
         productoDiv.appendChild(precioEl);
 
         // Agregar el div del producto al contenedor del catálogo
-        catalogoDiv.appendChild(productoDiv); */
+        catalogoDiv.appendChild(productoDiv);
         });
     }
 }
