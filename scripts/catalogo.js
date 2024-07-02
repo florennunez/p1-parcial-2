@@ -28,6 +28,8 @@ class Catalogo {
         productoDiv.classList.add('producto');
 
         // Crear y configurar elementos para nombre, descripción y precio
+        const imagenEl = document.createElement('img');
+        imagenEl.textContent = producto.imagen;
         const nombreEl = document.createElement('h2');
         nombreEl.textContent = producto.nombre;
         const descripcionEl = document.createElement('p');
