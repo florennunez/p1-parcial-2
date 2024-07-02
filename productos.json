@@ -39,7 +39,7 @@
     {
         "nombre": "Rick y Morty", 
         "descripcion": "Ranglan gris mangas negras diseño personalizado", 
-        "precio": 800, "imagen": "images/remera.jpg", 
+        "precio": 800, "imagen": "images/logo_cafe.png", 
         "categoria": "Textil"
     },
     {
