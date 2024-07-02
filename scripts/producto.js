@@ -19,5 +19,6 @@ class Producto {
                 <button onclick="agregarAlCarrito('${this.nombre}')">Agregar al Carrito</button>
             </div>
         `;
+        return productoDiv;
     }
 }
