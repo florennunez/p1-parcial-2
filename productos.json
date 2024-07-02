@@ -3,67 +3,67 @@
     {
         "nombre": "Node js", 
         "descripcion": "Taza de cerámica con sublimación personalizada", 
-        "precio": 500, "imagen": "img/taza_react.jpg", 
+        "precio": 500, "imagen": "images/taza_react.jpg", 
         "categoria": "Plastico"
     },
     {
         "nombre": "React", 
         "descripcion": "Taza de cerámica con sublimación personalizada", 
-        "precio": 500, "imagen": "img/taza_react.jpg", 
+        "precio": 500, "imagen": "images/taza_react.jpg", 
         "categoria": "Plastico"
     },
     {
         "nombre": "Taza de Café", 
         "descripcion": "Taza de cerámica con sublimación personalizada", 
-        "precio": 500, "imagen": "img/taza_react.jpg", 
+        "precio": 500, "imagen": "images/taza_react.jpg", 
         "categoria": "Plastico"
     },
     {
         "nombre": "Charly García", 
         "descripcion": "Ranglan gris mangas negras diseño personalizado", 
-        "precio": 800, "imagen": "img/remera.jpg", 
+        "precio": 800, "imagen": "images/remera.jpg", 
         "categoria": "Textil"
     },
     {
         "nombre": "Indio Solari", 
         "descripcion": "Ranglan gris mangas negras diseño personalizado", 
-        "precio": 800, "imagen": "img/remera.jpg", 
+        "precio": 800, "imagen": "images/remera.jpg", 
         "categoria": "Textil"
     },
     {
         "nombre": "Gatitos", 
         "descripcion": "Ranglan gris mangas negras diseño personalizado", 
-        "precio": 800, "imagen": "img/remera.jpg", 
+        "precio": 800, "imagen": "images/remera.jpg", 
         "categoria": "Textil"
     },
     {
         "nombre": "Rick y Morty", 
         "descripcion": "Ranglan gris mangas negras diseño personalizado", 
-        "precio": 800, "imagen": "img/remera.jpg", 
+        "precio": 800, "imagen": "images/remera.jpg", 
         "categoria": "Textil"
     },
     {
         "nombre": "Pulp Fiction", 
         "descripcion": "Ranglan gris mangas negras diseño personalizado", 
-        "precio": 800, "imagen": "img/remera.jpg", 
+        "precio": 800, "imagen": "images/remera.jpg", 
         "categoria": "Textil"
     },
     {
         "nombre": "Soy un pepinillo Morty", 
         "descripcion": "Taza de cerámica con sublimación personalizada", 
-        "precio": 800, "imagen": "img/remera.jpg", 
+        "precio": 800, "imagen": "images/remera.jpg", 
         "categoria": "Textil"
     },
     {
         "nombre": "Bandeja", 
         "descripcion": "Bandejas de 20x20 cm personalizadas", 
-        "precio": 200, "imagen": "img/llavero.jpg", 
+        "precio": 200, "imagen": "images/llavero.jpg", 
         "categoria": "Madera"
     },
     { 
         "nombre": "Llaveros", 
         "descripcion": "Llaveros de madera personalizados", 
-        "precio": 200, "imagen": "img/llavero.jpg", 
+        "precio": 200, "imagen": "images/llavero.jpg", 
         "categoria": "Madera"
     }
  
