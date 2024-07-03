@@ -24,6 +24,14 @@ function filtrarProductos(categoria) {
     //deberia tener un filter
 }
 
+const filters = document.querySelectorAll('.filtro');
+filters.forEach(filter => {
+    filter.addEventListener('click', (e) => {
+        e.preventDefault();
+        const categoria = filter.dataset.categoria;
+        catalogo.mostrarProductos(categoria);
+    });
+});
 /* function agregarAlCarrito(nombreProducto) {
     const producto = catalogo.productos.find(p => p.nombre === nombreProducto);
     if (producto) {
