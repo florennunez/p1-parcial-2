@@ -15,17 +15,18 @@ fetch('productos.json')
     .then(response => response.json())
     .then(data => {
         catalogo.cargarProductos(data);
-        catalogo.mostrarProductos(''); //limpia el contenedor
+        // Aquí podrías llamar a mostrarProductos sin filtro para cargar todos inicialmente
+        catalogo.mostrarProductos('');
     });
 
-    const filters = document.querySelectorAll('.filtro');
-    filters.forEach(filter => {
-        filter.addEventListener('click', (e) => {
-            e.preventDefault();
-            const categoria = filter.dataset.categoria;
-            catalogo.mostrarProductos(categoria);
-        });
-    });
+function filtrarProductos(categoria) {
+    catalogo.mostrarProductos(categoria);
+    //deberia tener un filter
+}
 
-
+/* function agregarAlCarrito(nombreProducto) {
+    const producto = catalogo.productos.find(p => p.nombre === nombreProducto);
+    if (producto) {
+        carrito.agregarProducto(producto);
+    } }*/
 
