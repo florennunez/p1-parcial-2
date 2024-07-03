@@ -1,7 +1,7 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', function () {
     const catalogo = new Catalogo();
-    const carrito = new Carrito();
+    const carrito = new Carrito(carrito);
 
     fetch('productos.json')
         .then(response => response.json())
