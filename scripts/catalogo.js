@@ -25,7 +25,7 @@ class Catalogo {
     productosFiltrados.forEach(producto => {
         // Crear contenedor para cada producto
         const productoDiv = document.createElement('div');
-        productoDiv.classList.add('producto');
+        productoDiv.classList.add('producto border-start border border-secondary rounded-1');
 
         // Crear y configurar elementos para imagen, nombre, descripción y precio
         const imagenEl = document.createElement('img');
