@@ -1,18 +1,30 @@
 class Carrito {
     constructor() {
-        this.productos = [];
-        this.totalProductos = 0;
-        this.totalPagar = 0;
+        this.items = [];
     }
 
     agregarProducto(producto) {
-        this.productos.push(producto);
-        this.totalProductos++;
-        this.totalPagar += producto.precio;
+        this.items.push(producto);
         this.actualizarCarrito();
     }
 
-    quitarProducto(nombreProducto) {
+    actualizarCarrito() { 
+        const carritoDiv = document.getElementById('carrito');
+        carritoDiv.innerHTML = '';
+        this.items.forEach(item => {
+            const itemDiv = document.createElement('div');
+            itemDiv.classList.add('item', 'mb-3');
+            const nombreEl = document.createElement('h3');
+            nombreEl.textContent = item.nombre;
+            const precioEl = document.createElement('p');
+            precioEl.textContent = `Precio: $${item.precio}`;
+            itemDiv.appendChild(nombreEl);
+            itemDiv.appendChild(precioEl);
+            carritoDiv.appendChild(itemDiv);
+        }); 
+    }
+
+    quitarProducto(no) {
         const index = this.productos.findIndex(producto => producto.nombre === nombreProducto);
         if (index !== -1) {
             this.totalPagar -= this.productos[index].precio;
@@ -22,13 +34,10 @@ class Carrito {
         }
     }
 
-    actualizarCarrito() {
-        const carritoProductosDiv = document.getElementById('carrito-productos');
-        carritoProductosDiv.innerHTML = '';
-        this.productos.forEach(producto => {
-            carritoProductosDiv.innerHTML += `<p>${producto.nombre} - $${producto.precio}</p>`;
-        });
-        document.getElementById('total-productos').textContent = this.totalProductos;
-        document.getElementById('total-pagar').textContent = this.totalPagar.toFixed(2);
+    vaciarCarrito() {
+        this.productos = [];
+        this.totalPagar = 0;
+        this.totalProductos = 0;
+        this.actualizarCarrito(); 
     }
 }
