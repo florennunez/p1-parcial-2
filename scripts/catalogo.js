@@ -1,6 +1,7 @@
 class Catalogo {
     constructor() {
         this.productos = [];
+        this.carrito = carrito;
     }
 
     cargarProductos(data) {
@@ -42,7 +43,7 @@ class Catalogo {
         const agregarBoton = document.createElement('button');
         agregarBoton.textContent = 'Agregar al carrito';
         agregarBoton.addEventListener('click', () => {
-            this.carrito.agregarProducto(producto);
+        this.carrito.agregarProducto(producto);
         });
 
         // Agregar elementos al div del producto
