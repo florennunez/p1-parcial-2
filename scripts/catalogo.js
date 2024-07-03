@@ -10,15 +10,15 @@ class Catalogo {
 
     filtrarProductos(categoria) {
         if (categoria === '') {
-            return this.productos; // Si no hay categoría, devuelve todos los productos
+            return this.productos;
         }
         return this.productos.filter(producto => producto.categoria === categoria);
     }
 
     mostrarProductos(categoria) {
         const catalogoDiv = document.getElementById('productos');
-    // Limpiar el contenido actual
-    while (catalogoDiv.firstChild) {
+        // Limpiar el contenido actual
+        while (catalogoDiv.firstChild) {
         catalogoDiv.removeChild(catalogoDiv.firstChild);
     }
     const productosFiltrados = this.filtrarProductos(categoria);
@@ -31,7 +31,7 @@ class Catalogo {
         // Crear y configurar elementos para imagen, nombre, descripción y precio
         const imagenEl = document.createElement('img');
         imagenEl.src = producto.imagen;
-        imagenEl.textContent = producto.imagen;
+        imagenEl.alt = producto.categoria;
         const nombreEl = document.createElement('h2');
         nombreEl.textContent = producto.nombre;
         const descripcionEl = document.createElement('p');

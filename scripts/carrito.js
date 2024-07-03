@@ -27,17 +27,13 @@ class Carrito {
     quitarProducto(no) {
         const index = this.productos.findIndex(producto => producto.nombre === nombreProducto);
         if (index !== -1) {
-            this.totalPagar -= this.productos[index].precio;
             this.productos.splice(index, 1);
-            this.totalProductos--;
             this.actualizarCarrito();
         }
     }
 
     vaciarCarrito() {
-        this.productos = [];
-        this.totalPagar = 0;
-        this.totalProductos = 0;
-        this.actualizarCarrito(); 
+        this.items = [];
+        this.actualizarCarrito();
     }
 }
