@@ -15,7 +15,6 @@ fetch('productos.json')
     .then(response => response.json())
     .then(data => {
         catalogo.cargarProductos(data);
-        // Aquí podrías llamar a mostrarProductos sin filtro para cargar todos inicialmente
         catalogo.mostrarProductos('');
     });
 
