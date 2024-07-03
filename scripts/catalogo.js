@@ -29,6 +29,7 @@ class Catalogo {
 
         // Crear y configurar elementos para imagen, nombre, descripción y precio
         const imagenEl = document.createElement('img');
+        imagenEl.src = producto.imagen;
         imagenEl.textContent = producto.imagen;
         const nombreEl = document.createElement('h2');
         nombreEl.textContent = producto.nombre;
