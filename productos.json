@@ -65,5 +65,11 @@
         "descripcion": "Llaveros de madera personalizados", 
         "precio": 200, "imagen": "images/Llavero-Hueso.png", 
         "categoria": "Madera"
+    },
+    {
+        "nombre": "Llaveros", 
+        "descripcion": "Llaveros de madera personalizados", 
+        "precio": 200, "imagen": "images/Llavero-Hueso.png", 
+        "categoria": "Madera"
     }
 ]
