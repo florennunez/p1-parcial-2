@@ -1,7 +1,7 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', function () {
-    const catalogo = new Catalogo();
-    const carrito = new Carrito(carrito); // Se crea una instancia de la clase Carrito
+    const catalogo = new Carrito();
+    const carrito = new Catalogo(carrito); // Se crea una instancia de la clase Carrito
 
     fetch('productos.json')
         .then(response => response.json())
