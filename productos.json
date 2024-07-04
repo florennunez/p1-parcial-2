@@ -25,15 +25,15 @@
         "categoria": "Textil"
     },
     {
-        "nombre": "Indio Solari", 
+        "nombre": "Messi", 
         "descripcion": "Ranglan gris mangas negras diseño personalizado", 
-        "precio": 800, "imagen": "images/remera_generica.jpg", 
+        "precio": 800, "imagen": "images/remera_Messi.jpg", 
         "categoria": "Textil"
     },
     {
-        "nombre": "Gatitos", 
+        "nombre": "Latinoamerica", 
         "descripcion": "Ranglan gris mangas negras diseño personalizado", 
-        "precio": 800, "imagen": "images/remera_generica.jpg", 
+        "precio": 800, "imagen": "images/Rangla_americaLatina.jpg", 
         "categoria": "Textil"
     },
     {
@@ -43,9 +43,9 @@
         "categoria": "Plastico"
     },
     {
-        "nombre": "Pulp Fiction", 
+        "nombre": "Anda maquina", 
         "descripcion": "Ranglan gris mangas negras diseño personalizado", 
-        "precio": 800, "imagen": "images/remera_generica.jpg", 
+        "precio": 800, "imagen": "images/Anda_maquina.jpg", 
         "categoria": "Textil"
     },
     {
