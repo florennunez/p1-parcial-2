@@ -27,13 +27,13 @@
     {
         "nombre": "Messi", 
         "descripcion": "Ranglan gris mangas negras diseño personalizado", 
-        "precio": 800, "imagen": "images/remera_Messi.jpg", 
+        "precio": 800, "imagen": "images/remera_generica.jpg", 
         "categoria": "Textil"
     },
     {
         "nombre": "Latinoamerica", 
         "descripcion": "Ranglan gris mangas negras diseño personalizado", 
-        "precio": 800, "imagen": "images/Rangla_americaLatina.jpg", 
+        "precio": 800, "imagen": "images/Ranglan_americaLatina.jpg", 
         "categoria": "Textil"
     },
     {
