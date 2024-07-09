@@ -4,8 +4,10 @@ class Carrito {
     }
 
     agregarProducto(producto) {
-        this.items.push(producto);
-        this.actualizarCarrito();
+        const index = this.items.findIndex(item => item.nombre === producto.nombre);
+        if (index === -1) { 
+            this.items.push(producto);
+            this.actualizarCarrito();
     }
 
     actualizarCarrito() { 
