@@ -43,8 +43,14 @@ class Carrito {
         totalPrecioDiv.appendChild(totalPrecioEl);
         carritoDiv.appendChild(totalPrecioDiv);
     
+        if (this.agregarProducto == 1){
+            this.mostrarMensaje('Producto agregado al carrito');
+            console.log('Producto agregado al carrito');
+        }
+
         // Mostrar mensaje de producto agregado al carrito
         this.mostrarMensaje('Producto agregado al carrito');
+
     }
 
     quitarProducto(nombreProducto) {
