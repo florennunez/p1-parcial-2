@@ -19,15 +19,34 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+let contadorCarrito = 0;
 
 function mostrarNotificacion() {
-    var numeroItems = obtenerNumeroItemsCarrito(); // Asume que esta función ya existe y devuelve el número de items en el carrito
-    var notificacionDiv = document.getElementById('notification');
-    notificacionDiv.textContent = 'Tienes ' + numeroItems + ' artículos en tu carrito';
-    notificacionDiv.style.display = 'block';
+    contadorCarrito++; // Incrementa el contador cada vez que se llama a la función
+    const notificacion = document.getElementById('notification');
     
-    // Opcional: Ocultar la notificación después de unos segundos
-    setTimeout(() => {
-        notificacionDiv.style.display = 'none';
-    }, 3000);
+    // Actualiza el contenido de la notificación con el contador
+    notificacion.innerHTML = `Productos en el carrito: ${contadorCarrito}`;
+    
+    // Muestra la notificación si aún no está visible
+    if (notificacion.style.display === 'none') {
+        notificacion.style.display = 'block';
+    }
+}
+
+function actualizarNotificacion() {
+    const notificacion = document.getElementById('notification');
+    if (contadorCarrito > 0) {
+        notificacion.innerHTML = `Productos en el carrito: ${contadorCarrito}`;
+        notificacion.style.display = 'block';
+    } else {
+        notificacion.style.display = 'none'; // Oculta la notificación si el contador es 0
+    }
+}
+
+function removerProducto() {
+    if (contadorCarrito > 0) {
+        contadorCarrito--; // Decrementa el contador
+        actualizarNotificacion(); // Actualiza la notificación
+    }
 }
