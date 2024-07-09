@@ -16,6 +16,8 @@ class Carrito {
     actualizarCarrito() { 
         const carritoDiv = document.getElementById('carrito');
         carritoDiv.innerHTML = '';
+        let totalPrecio = 0;
+
         this.items.forEach(item => {
             const itemDiv = document.createElement('div');
             itemDiv.classList.add('item', 'mb-3');
@@ -24,12 +26,22 @@ class Carrito {
             const cantidadEl = document.createElement('p');
             cantidadEl.textContent = `Cantidad: ${item.cantidad}`;
             const precioEl = document.createElement('p');
-            precioEl.textContent = `Precio: $${item.precio * item.cantidad}`;  // Actualizar el precio total por la cantidad
+            const totalItemPrecio = item.precio * item.cantidad;
+            precioEl.textContent = `Precio: $${totalItemPrecio}`;  // Actualizar el precio total por la cantidad
+            totalPrecio += totalItemPrecio;  // Sumar el precio del ítem al total
             itemDiv.appendChild(nombreEl);
             itemDiv.appendChild(cantidadEl);
             itemDiv.appendChild(precioEl);
             carritoDiv.appendChild(itemDiv);
         }); 
+
+        // Mostrar el precio total del carrito
+        const totalPrecioDiv = document.createElement('div');
+        totalPrecioDiv.classList.add('total', 'mt-3');
+        const totalPrecioEl = document.createElement('h3');
+        totalPrecioEl.textContent = `Total: $${totalPrecio}`;
+        totalPrecioDiv.appendChild(totalPrecioEl);
+        carritoDiv.appendChild(totalPrecioDiv);
     }
 
     quitarProducto(nombreProducto) {
