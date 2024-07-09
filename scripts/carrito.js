@@ -42,8 +42,9 @@ class Carrito {
         totalPrecioDiv.appendChild(totalPrecioEl);
         carritoDiv.appendChild(totalPrecioDiv);
 
-        // Mostrar mensaje de producto agregado al carrito
-        this.mostrarMensaje('Producto agregado al carrito');
+        mostrarMensaje(mensaje) {
+            alert(mensaje); // O cualquier otra lógica para mostrar mensajes al usuario
+        }
     }
 
     mostrarMensaje(mensaje) {
