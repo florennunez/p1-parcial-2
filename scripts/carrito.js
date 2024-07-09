@@ -11,6 +11,7 @@ class Carrito {
             this.items[index].cantidad += 1;
         }
         this.actualizarCarrito();
+        this.mostrarMensaje('Producto agregado al carrito');
     }
 
     actualizarCarrito() { 
@@ -41,9 +42,6 @@ class Carrito {
         totalPrecioEl.textContent = `Total: $${totalPrecio}`;
         totalPrecioDiv.appendChild(totalPrecioEl);
         carritoDiv.appendChild(totalPrecioDiv);
-
-        // Mostrar mensaje de producto agregado al carrito
-        this.mostrarMensaje('Producto agregado al carrito');
     }
 
     mostrarMensaje(mensaje) {
