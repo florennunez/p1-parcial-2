@@ -5,9 +5,9 @@ class Carrito {
 
     agregarProducto(producto) {
         const index = this.items.findIndex(item => item.nombre === producto.nombre);
-        if (index === -1) {  // Si el producto no está en el carrito, agregarlo
+        if (index === -1) {
             this.items.push({ ...producto, cantidad: 1 });
-        } else {  // Si el producto ya está en el carrito, incrementar la cantidad
+        } else {
             this.items[index].cantidad += 1;
         }
         this.actualizarCarrito();
@@ -17,7 +17,7 @@ class Carrito {
         const carritoDiv = document.getElementById('carrito');
         carritoDiv.innerHTML = '';
         let totalPrecio = 0;
-    
+
         this.items.forEach(item => {
             const itemDiv = document.createElement('div');
             itemDiv.classList.add('item', 'mb-3');
@@ -27,47 +27,48 @@ class Carrito {
             cantidadEl.textContent = `Cantidad: ${item.cantidad}`;
             const precioEl = document.createElement('p');
             const totalItemPrecio = item.precio * item.cantidad;
-            precioEl.textContent = `Precio: $${totalItemPrecio}`;  // Actualizar el precio total por la cantidad
-            totalPrecio += totalItemPrecio;  // Sumar el precio del ítem al total
+            precioEl.textContent = `Precio: $${totalItemPrecio}`;
+            totalPrecio += totalItemPrecio;
             itemDiv.appendChild(nombreEl);
             itemDiv.appendChild(cantidadEl);
             itemDiv.appendChild(precioEl);
             carritoDiv.appendChild(itemDiv);
         }); 
-    
-        // Mostrar el precio total del carrito
+
         const totalPrecioDiv = document.createElement('div');
         totalPrecioDiv.classList.add('total', 'mt-3');
         const totalPrecioEl = document.createElement('h3');
         totalPrecioEl.textContent = `Total: $${totalPrecio}`;
         totalPrecioDiv.appendChild(totalPrecioEl);
         carritoDiv.appendChild(totalPrecioDiv);
-    
-        if (this.agregarProducto == 1){
-            this.mostrarMensaje('Producto agregado al carrito');
-            console.log('Producto agregado al carrito');
-        }
 
         // Mostrar mensaje de producto agregado al carrito
         this.mostrarMensaje('Producto agregado al carrito');
+    }
 
+    mostrarMensaje(mensaje) {
+        const mensajeDiv = document.getElementById('mensaje');
+        mensajeDiv.textContent = mensaje;
+        mensajeDiv.classList.add('mostrar');
+
+        // Ocultar el mensaje después de unos segundos
+        setTimeout(() => {
+            mensajeDiv.classList.remove('mostrar');
+        }, 3000);
     }
 
     quitarProducto(nombreProducto) {
         const index = this.items.findIndex(producto => producto.nombre === nombreProducto);
         if (index !== -1) {
             if (this.items[index].cantidad > 1) {
-                this.items[index].cantidad -= 1;  // Decrementar la cantidad si es mayor que 1
+                this.items[index].cantidad -= 1;
             } else {
-                this.items.splice(index, 1);  // Eliminar el producto si la cantidad es 1
+                this.items.splice(index, 1);
             }
             this.actualizarCarrito();
-        
         }
     }
 
-
-    
     vaciarCarrito() {
         this.items = [];
         this.actualizarCarrito();
