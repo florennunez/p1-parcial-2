@@ -51,11 +51,6 @@ class Carrito {
         mensajeDiv.textContent = mensaje;
         mensajeDiv.classList.add('mostrar');
         console.log("funciona");
-
-        // Ocultar el mensaje después de unos segundos
-        setTimeout(() => {
-            mensajeDiv.classList.remove('mostrar');
-        }, 3000);
     }
 
     quitarProducto(nombreProducto) {
