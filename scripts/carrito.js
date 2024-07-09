@@ -11,7 +11,7 @@ class Carrito {
             this.items[index].cantidad += 1;
         }
         this.actualizarCarrito();
-        this.mostrarMensaje('Producto agregado al carrito');
+        this.mostrarMensaje('contadorCarrito');
     }
 
     actualizarCarrito() { 
