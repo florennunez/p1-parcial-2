@@ -1,6 +1,7 @@
 class Carrito {
     constructor() {
         this.items = [];
+        this.contadorCarrito = document.getElementById('contadorCarrito'); // Asegúrate de que este ID exista en tu HTML
     }
 
     agregarProducto(producto) {
