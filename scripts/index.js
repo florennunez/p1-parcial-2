@@ -19,3 +19,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+function mostrarNotificacion() {
+    var numeroItems = obtenerNumeroItemsCarrito(); // Asume que esta función ya existe y devuelve el número de items en el carrito
+    var notificacionDiv = document.getElementById('notification');
+    notificacionDiv.textContent = 'Tienes ' + numeroItems + ' artículos en tu carrito';
+    notificacionDiv.style.display = 'block';
+    
+    // Opcional: Ocultar la notificación después de unos segundos
+    setTimeout(() => {
+        notificacionDiv.style.display = 'none';
+    }, 3000);
+}
