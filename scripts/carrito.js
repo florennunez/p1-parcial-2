@@ -5,9 +5,10 @@ class Carrito {
 
     agregarProducto(producto) {
         const index = this.items.findIndex(item => item.nombre === producto.nombre);
-        if (index === -1) { 
+        if (index === -1) {  // Solo agrega el producto si no está en el carrito
             this.items.push(producto);
             this.actualizarCarrito();
+        }
     }
 
     actualizarCarrito() { 
@@ -26,10 +27,10 @@ class Carrito {
         }); 
     }
 
-    quitarProducto(no) {
-        const index = this.productos.findIndex(producto => producto.nombre === nombreProducto);
+    quitarProducto(nombreProducto) {
+        const index = this.items.findIndex(producto => producto.nombre === nombreProducto);
         if (index !== -1) {
-            this.productos.splice(index, 1);
+            this.items.splice(index, 1);
             this.actualizarCarrito();
         }
     }
