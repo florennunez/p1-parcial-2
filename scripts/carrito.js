@@ -17,7 +17,7 @@ class Carrito {
         const carritoDiv = document.getElementById('carrito');
         carritoDiv.innerHTML = '';
         let totalPrecio = 0;
-
+    
         this.items.forEach(item => {
             const itemDiv = document.createElement('div');
             itemDiv.classList.add('item', 'mb-3');
@@ -34,7 +34,7 @@ class Carrito {
             itemDiv.appendChild(precioEl);
             carritoDiv.appendChild(itemDiv);
         }); 
-
+    
         // Mostrar el precio total del carrito
         const totalPrecioDiv = document.createElement('div');
         totalPrecioDiv.classList.add('total', 'mt-3');
@@ -42,6 +42,9 @@ class Carrito {
         totalPrecioEl.textContent = `Total: $${totalPrecio}`;
         totalPrecioDiv.appendChild(totalPrecioEl);
         carritoDiv.appendChild(totalPrecioDiv);
+    
+        // Mostrar mensaje de producto agregado al carrito
+        this.mostrarMensaje('Producto agregado al carrito');
     }
 
     quitarProducto(nombreProducto) {
@@ -53,9 +56,12 @@ class Carrito {
                 this.items.splice(index, 1);  // Eliminar el producto si la cantidad es 1
             }
             this.actualizarCarrito();
+        
         }
     }
 
+
+    
     vaciarCarrito() {
         this.items = [];
         this.actualizarCarrito();
