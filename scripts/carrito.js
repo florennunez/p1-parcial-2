@@ -48,7 +48,6 @@ class Carrito {
         const mensajeDiv = document.getElementById('mensaje');
         mensajeDiv.textContent = mensaje;
         mensajeDiv.classList.add('mostrar');
-        console.log("funciona");
     }
 
     quitarProducto(nombreProducto) {
