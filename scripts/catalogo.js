@@ -42,6 +42,7 @@ class Catalogo {
             // Agregar boton del carrito
             const agregarBoton = document.createElement('button');
             agregarBoton.classList.add('btn');
+            agregarBoton.classList.add('btn-outline-success');
             agregarBoton.textContent = 'Agregar al carrito';
             agregarBoton.addEventListener('click', () => {
                 this.carrito.agregarProducto(producto);
