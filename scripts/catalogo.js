@@ -54,7 +54,7 @@ class Catalogo {
                 modal.setAttribute('tabindex', '-1');
                 modal.setAttribute('role', 'dialog');
                 modal.setAttribute('id', 'modalDescripcion');
-
+                modal.appendChild(modal);
 
                 //Crear el dialogo del modal
                 const modalDialog = document.createElement('div');
