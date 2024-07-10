@@ -45,8 +45,8 @@ class Catalogo {
             modalDescripcion.classList.add('btn-outline-dark');
             modalDescripcion.classList.add('m-2');
             modalDescripcion.textContent = 'Ver más';
-            modalDescripcion.setAttribute('data-toggle', 'modal');
-            modalDescripcion.setAttribute('data-target', '#modalDescripcion');
+            modalDescripcion.setAttribute('data-bs-toggle', 'modal');
+            modalDescripcion.setAttribute('data-bs-target', '#modalDescripcion');
             modalDescripcion.addEventListener('click', () => {
                 const modal = document.getElementById('div');
                 modal.classList.add('modal');
