@@ -47,14 +47,15 @@ class Catalogo {
             modalDescripcion.textContent = 'Ver más';
             modalDescripcion.setAttribute('data-bs-toggle', 'modal');
             modalDescripcion.setAttribute('data-bs-target', '#modalDescripcion');
+            //funcion del modal
             modalDescripcion.addEventListener('click', () => {
+                
                 // Crear el modal
-                const modal = createElement('div');
+                const modal = document.createElement('div');
                 modal.classList.add('modal');
                 modal.setAttribute('tabindex', '-1');
                 modal.setAttribute('role', 'dialog');
                 modal.setAttribute('id', 'modalDescripcion');
-                modal.appendChild(modal);
 
                 //Crear el dialogo del modal
                 const modalDialog = document.createElement('div');
@@ -107,7 +108,13 @@ class Catalogo {
 
                 // Agregar el modal al DOM, por ejemplo, al final del body o cerca del elemento del producto
                 document.body.appendChild(modal);
+                // Inicializar el modal con Bootstrap
+                var myModal = new bootstrap.Modal(document.getElementById('modalDescripcion'), {
+                    // Aquí puedes pasar opciones, por ejemplo:
+                    keyboard: false
             });
+
+            myModal.show();
 
             // Agregar boton del carrito
             const agregarBoton = document.createElement('button');
@@ -129,5 +136,5 @@ class Catalogo {
             // Agregar el div del producto al contenedor del catálogo
             catalogoDiv.appendChild(productoDiv);
         });
-    }
-}
+        });
+}}
