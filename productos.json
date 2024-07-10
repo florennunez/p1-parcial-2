@@ -3,73 +3,73 @@
     {
         "nombre": "Node js", 
         "descripcion": "Taza de cerámica", 
-        "precio": 500, "imagen": "images/taza_node.jpg", 
+        "precio": 6000, "imagen": "images/taza_node.jpg", 
         "categoria": "Plastico"
     },
     {
         "nombre": "React", 
         "descripcion": "Taza de cerámica", 
-        "precio": 500, "imagen": "images/taza_react.jpg", 
+        "precio": 6000, "imagen": "images/taza_react.jpg", 
         "categoria": "Plastico"
     },
     {
         "nombre": "Taza de Café", 
         "descripcion": "Taza de cerámica con sublimación personalizada", 
-        "precio": 500, "imagen": "images/nocoffe.png", 
+        "precio": 6000, "imagen": "images/nocoffe.png", 
         "categoria": "Plastico"
     },
     {
-        "nombre": "Charly García", 
+        "nombre": "Basica", 
         "descripcion": "Ranglan gris mangas negras diseño personalizado", 
-        "precio": 800, "imagen": "images/remera_generica.jpg", 
+        "precio": 8600, "imagen": "images/remera_generica.jpg", 
         "categoria": "Textil"
     },
     {
         "nombre": "Messi", 
         "descripcion": "Ranglan gris mangas negras diseño personalizado", 
-        "precio": 800, "imagen": "images/remera_generica.jpg", 
+        "precio": 8600, "imagen": "images/remera_generica.jpg", 
         "categoria": "Textil"
     },
     {
         "nombre": "Latinoamerica", 
         "descripcion": "Ranglan gris mangas negras diseño personalizado", 
-        "precio": 800, "imagen": "images/Ranglan_americaLatina.jpg", 
+        "precio": 8600, "imagen": "images/Ranglan_americaLatina.jpg", 
         "categoria": "Textil"
     },
     {
         "nombre": "Rick y Morty", 
         "descripcion": "Ranglan gris mangas negras diseño personalizado", 
-        "precio": 800, "imagen": "images/rick.jpg", 
+        "precio": 6000, "imagen": "images/rick.jpg", 
         "categoria": "Plastico"
     },
     {
         "nombre": "Anda maquina", 
         "descripcion": "Ranglan gris mangas negras diseño personalizado", 
-        "precio": 800, "imagen": "images/Anda_maquina.jpg", 
+        "precio": 9000, "imagen": "images/Anda_maquina.jpg", 
         "categoria": "Textil"
     },
     {
         "nombre": "Soy un pepinillo Morty", 
         "descripcion": "Taza de cerámica con sublimación personalizada", 
-        "precio": 800, "imagen": "images/rick.jpg", 
+        "precio": 6000, "imagen": "images/rick.jpg", 
         "categoria": "Textil"
     },
     {
         "nombre": "Bandeja", 
         "descripcion": "Bandejas de 20x20 cm personalizadas", 
-        "precio": 200, "imagen": "images/BANDEJA-PARA-SUBLIMACION.jpg", 
+        "precio": 4800, "imagen": "images/BANDEJA-PARA-SUBLIMACION.jpg", 
         "categoria": "Madera"
     },
     { 
-        "nombre": "Llaveros", 
-        "descripcion": "Llaveros de madera personalizados", 
-        "precio": 200, "imagen": "images/Llavero-Hueso.png", 
+        "nombre": "Chapita hueso", 
+        "descripcion": "distintivo para tu mascota", 
+        "precio": 1100, "imagen": "images/Llavero-Hueso.png", 
         "categoria": "Madera"
     },
     {
         "nombre": "Llaveros", 
         "descripcion": "Llaveros de madera personalizados", 
-        "precio": 200, "imagen": "images/Llavero-Hueso.png", 
+        "precio": 200, "imagen": "images/Llaveros.jpg", 
         "categoria": "Madera"
     }
 ]
