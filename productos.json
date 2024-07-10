@@ -2,19 +2,19 @@
 [
     {
         "nombre": "Node js", 
-        "descripcion": "Taza", 
+        "descripcion": "Taza apilable", 
         "precio": 6000, "imagen": "images/taza_node.jpg", 
         "categoria": "Plastico"
     },
     {
         "nombre": "React", 
-        "descripcion": "Taza", 
+        "descripcion": "Taza apilable", 
         "precio": 6000, "imagen": "images/taza_react.jpg", 
         "categoria": "Plastico"
     },
     {
         "nombre": "Qué mira, bobó", 
-        "descripcion": "Taza de cerámica con sublimación personalizada", 
+        "descripcion": "Chop personalizado de 500 ml", 
         "precio": 6000, "imagen": "images/QUE-MIRA-BOBO.jpg", 
         "categoria": "Plastico"
     },
