@@ -52,7 +52,7 @@
         "nombre": "Soy un pepinillo Morty", 
         "descripcion": "Taza de cerámica con sublimación personalizada", 
         "precio": 6000, "imagen": "images/rick.jpg", 
-        "categoria": "Textil"
+        "categoria": "Plastico"
     },
     {
         "nombre": "Bandeja", 
