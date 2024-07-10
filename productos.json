@@ -13,9 +13,9 @@
         "categoria": "Plastico"
     },
     {
-        "nombre": "Taza de Café", 
+        "nombre": "Qué mira, bobó", 
         "descripcion": "Taza de cerámica con sublimación personalizada", 
-        "precio": 6000, "imagen": "images/nocoffe.png", 
+        "precio": 6000, "imagen": "images/quemira_bobo.jpg", 
         "categoria": "Plastico"
     },
     {
@@ -69,7 +69,7 @@
     {
         "nombre": "Llaveros", 
         "descripcion": "Llaveros de madera personalizados", 
-        "precio": 200, "imagen": "images/Llaveros.jpg", 
+        "precio": 200, "imagen": "images/Llaveros.JPG", 
         "categoria": "Madera"
     }
 ]
