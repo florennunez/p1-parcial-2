@@ -55,9 +55,9 @@ footer h2 {
 }
 
 .producto img {
-    max-width: 80%;
-    display: block;
-    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 #detalle-carrito {
