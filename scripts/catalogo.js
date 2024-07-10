@@ -48,10 +48,13 @@ class Catalogo {
             modalDescripcion.setAttribute('data-bs-toggle', 'modal');
             modalDescripcion.setAttribute('data-bs-target', '#modalDescripcion');
             modalDescripcion.addEventListener('click', () => {
-                const modal = document.getElementById('div');
+                // Crear el modal
+                const modal = createElement('div');
                 modal.classList.add('modal');
                 modal.setAttribute('tabindex', '-1');
                 modal.setAttribute('role', 'dialog');
+                modal.setAttribute('id', 'modalDescripcion');
+
 
                 //Crear el dialogo del modal
                 const modalDialog = document.createElement('div');
