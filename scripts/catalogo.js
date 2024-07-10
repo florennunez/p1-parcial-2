@@ -46,7 +46,11 @@ class Catalogo {
             modalDescripcion.textContent = 'Ver más';
             modalDescripcion.setAttribute('data-toggle', 'modal');
             modalDescripcion.setAttribute('data-target', '#modalDescripcion');
-
+            modalDescripcion.addEventListener('click', () => {
+                document.getElementById('modalDescripcionLabel').textContent = producto.nombre;
+                document.getElementById('modalDescripcionBody').textContent = producto.descripcion;
+            });
+            
             // Agregar boton del carrito
             const agregarBoton = document.createElement('button');
             agregarBoton.classList.add('btn');
