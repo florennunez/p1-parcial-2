@@ -42,7 +42,8 @@ class Catalogo {
             //boton modal
             const modalDescripcion = document.createElement('button');
             modalDescripcion.classList.add('btn');
-            modalDescripcion.classList.add('btn-info');
+            modalDescripcion.classList.add('btn-outline-dark');
+            modalDescripcion.classList.add('ml-2');
             modalDescripcion.textContent = 'Ver más';
             modalDescripcion.setAttribute('data-toggle', 'modal');
             modalDescripcion.setAttribute('data-target', '#modalDescripcion');
