@@ -131,6 +131,7 @@ class Catalogo {
             productoDiv.appendChild(descripcionEl);
             productoDiv.appendChild(precioEl);
             productoDiv.appendChild(agregarBoton);
+            productoDiv.appendChild(modalDescripcion);
             productoDiv.appendChild(modal);
 
             // Agregar el div del producto al contenedor del catálogo
