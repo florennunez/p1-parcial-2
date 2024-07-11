@@ -1,7 +1,7 @@
 class Carrito {
     constructor() {
         this.items = [];
-        this.contadorCarrito = document.getElementById('contadorCarrito'); // Asegúrate de que este ID exista en tu HTML
+        this.contadorCarrito = document.getElementById('notificacion'); 
     }
 
     agregarProducto(producto) {
@@ -12,7 +12,7 @@ class Carrito {
             this.items[index].cantidad += 1;
         }
         this.actualizarCarrito();
-        this.mostrarMensaje(this.contadorCarrito.textContent = this.items.length);
+        this.mostrarNotificacion(this.contadorCarrito.textContent = this.items.length);
     }
 
     actualizarCarrito() { 
