@@ -31,7 +31,7 @@ class Carrito {
         else {
             const notificacion = document.getElementById('notificacion');
             notificacion.style.display = 'block';
-            notificacion.innerHTML = 'contadorCarrito';
+            notificacion.innerHTML = contadorCarrito;
         }
     }
 
@@ -43,8 +43,8 @@ class Carrito {
             this.items[index].cantidad += 1;
         }
         this.actualizarCarrito();
-        const itemsLength = this.contadorCarrito.textContent = this.items.length 
-        this.mostrarNotificacion(itemsLength);
+        /* const itemsLength = this.contadorCarrito.textContent = this.items.length 
+        this.mostrarNotificacion(itemsLength); */
     }
 
 
