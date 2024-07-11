@@ -3,7 +3,7 @@ class Carrito {
         this.items = [];
         this.contadorCarrito = document.getElementById('notificacion'); 
         //el contador puede ir dentro o fuera
-        contadorCarrito = 0;
+        this.contadorCarrito = 0;
     }
 
     //agrego metodo para mostrar notificacion
@@ -11,7 +11,7 @@ class Carrito {
         //actualizo el contador
         this.items.push(item);
         this.actualizarCarrito();
-        this.mostrarNotificacion(this.contadorCarrito.textContent = this.items.length);
+        this.actualizarNotificacion();
     }
 
     actualizarNotificacion(){
@@ -23,18 +23,18 @@ class Carrito {
         }
     }
     
-    mostrarNotificacion(contadorCarrito) {
-        if (contadorCarrito === 0) {
-            const notificacion = document.getElementById('notificacion');
+    mostrarNotificacion(contador) {
+        const notificacion = document.getElementById('notificacion')
+        if (contador === 0) {
             notificacion.style.display = 'none';
         }
         else {
-            const notificacion = document.getElementById('notificacion');
             notificacion.style.display = 'block';
-            notificacion.innerHTML = contadorCarrito;
+            notificacion.innerHTML = contador;
         }
     }
 
+    //Agrega los productos al carrito
     agregarProducto(producto) {
         const index = this.items.findIndex(item => item.nombre === producto.nombre);
         if (index === -1) {
@@ -45,8 +45,8 @@ class Carrito {
         this.actualizarCarrito();
         /* const itemsLength = this.contadorCarrito.textContent = this.items.length 
         this.mostrarNotificacion(itemsLength); */
+        this.actualizarNotificacion();
     }
-
 
     actualizarCarrito() { 
         const carritoDiv = document.getElementById('carrito');
