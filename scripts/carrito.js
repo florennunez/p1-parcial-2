@@ -31,7 +31,7 @@ class Carrito {
         else {
             const notificacion = document.getElementById('notificacion');
             notificacion.style.display = 'block';
-            notificacion.innerHTML = contadorCarrito;
+            notificacion.innerHTML = 'contadorCarrito';
         }
     }
 
