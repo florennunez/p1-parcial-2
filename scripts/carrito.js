@@ -43,8 +43,10 @@ class Carrito {
             this.items[index].cantidad += 1;
         }
         this.actualizarCarrito();
-        this.mostrarNotificacion(this.contadorCarrito.textContent = this.items.length);
+        const itemsLength = this.contadorCarrito.textContent = this.items.length 
+        this.mostrarNotificacion(itemsLength);
     }
+
 
     actualizarCarrito() { 
         const carritoDiv = document.getElementById('carrito');
