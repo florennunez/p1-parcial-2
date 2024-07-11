@@ -2,6 +2,8 @@ class Carrito {
     constructor() {
         this.items = [];
         this.contadorCarrito = document.getElementById('notificacion'); 
+        //el contador puede ir dentro o fuera
+        contadorCarrito = 0;
     }
 
     //agrego metodo para mostrar notificacion
@@ -11,12 +13,25 @@ class Carrito {
         this.actualizarCarrito();
         this.mostrarNotificacion(this.contadorCarrito.textContent = this.items.length);
     }
+
     actualizarNotificacion(){
         if (this.items.length > 0) {
             this.contadorCarrito.style.display = 'block';
             this.contadorCarrito.innerHTML = this.items.length;
         } else {
             this.contadorCarrito.style.display = 'none';
+        }
+    }
+    
+    mostrarNotificacion(contadorCarrito) {
+        if (contadorCarrito === 0) {
+            const notificacion = document.getElementById('notificacion');
+            notificacion.style.display = 'none';
+        }
+        else {
+            const notificacion = document.getElementById('notificacion');
+            notificacion.style.display = 'block';
+            notificacion.innerHTML = contadorCarrito;
         }
     }
 
