@@ -19,3 +19,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+let contadorCarrito = 0;
+
+function mostrarNotificacion() {
+    if (contadorCarrito === 0) {
+        const notificacion = document.getElementById('notificacion');
+        notificacion.style.display = 'none';
+    }
+    else {
+        const notificacion = document.getElementById('notificacion');
+        notificacion.style.display = 'block';
+        notificacion.innerHTML = contadorCarrito;
+    }
+};
