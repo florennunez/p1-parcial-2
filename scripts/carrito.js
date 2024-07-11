@@ -44,27 +44,4 @@ class Carrito {
         totalPrecioDiv.appendChild(totalPrecioEl);
         carritoDiv.appendChild(totalPrecioDiv);
     }
-
-    mostrarMensaje(mensaje) {
-        const mensajeDiv = document.getElementById('mensaje');
-        mensajeDiv.textContent = mensaje;
-        mensajeDiv.classList.add('mostrar');
-    }
-
-    quitarProducto(nombreProducto) {
-        const index = this.items.findIndex(producto => producto.nombre === nombreProducto);
-        if (index !== -1) {
-            if (this.items[index].cantidad > 1) {
-                this.items[index].cantidad -= 1;
-            } else {
-                this.items.splice(index, 1);
-            }
-            this.actualizarCarrito();
-        }
-    }
-
-    vaciarCarrito() {
-        this.items = [];
-        this.actualizarCarrito();
-    }
 }
